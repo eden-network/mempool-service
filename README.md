@@ -15,7 +15,7 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	pb "mempool-service/protobuf"
+	pb "github.com/eden-network/mempool-service/protobuf"
 	"os"
 )
 
