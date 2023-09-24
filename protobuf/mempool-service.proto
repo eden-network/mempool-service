@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "github.com/eden-network/mempool-service/protobuf";
+
+service StreamService {
+  rpc StreamRawTransactions(StreamRawTransactionsRequest) returns (stream RawTransaction) {}
+}
+
+message StreamRawTransactionsRequest {
+  string filters = 1;
+  repeated string includes = 2;
+  string auth_header = 3;
+}
+
+message RawTransaction {
+  bytes rlp = 1;
+}
