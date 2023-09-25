@@ -1,4 +1,4 @@
-module mempool-service
+module github.com/eden-network/mempool-service
 
 go 1.20
 
